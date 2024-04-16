@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="js/contacto.js"></script>
+</head>
+<body class="bg-img">
+    <div class="header">
+        <p>Axel Pincheira</p>
+        <div class="menu">
+            <a href="index.html">INICIO</a>
+            <!-- <a href="#">PROYECTOS</a> -->
+        </div>
+    </div>
+    <div class="content center align-center full-page">
+        <div class="content-form bg-color-trans">
+            <form action="http://programacionpdg.site/post.php" id="form-contact" method="post">
+                <h1>Formulario de contacto</h1>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" placeholder="Escribe tu nombre" name="nombre" id="form_nombre" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="Escribe tu correo" name="correo" id="form_correo" required><br>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" placeholder="Escribe tu mensaje" rows="10" id="form_mensaje"></textarea><br>
+                <button type="button" id="btn_enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

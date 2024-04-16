@@ -1,0 +1,272 @@
+:root{
+    --main-color: rgb(60, 83, 104);
+    --main-color-trans: rgba(60, 83, 104, 0.802);
+    --alert-color: red;
+    --valid-color: rgb(29, 223, 71);
+}
+
+body {
+    display: block;
+    font-size: 16px;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    /* font-family: 'Oxygen', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    position: fixed;
+    top: 0%;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+}
+
+.header p {
+    margin: 0.2%;
+    color: white;
+    margin-left: 4%;
+    font-size: 36px;
+}
+
+.menu {
+    margin-right: 10%;
+    display: flex;
+    font-size: 24px;
+}
+
+.menu a {
+    margin-left: 10%;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    background: rgba(85, 100, 113, 0.643);
+    border: none;
+    border-radius: 20%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+@keyframes showHide {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }    
+}
+#texto-info {
+    animation: showHide 3s infinite;
+}
+.content-1 {
+    top: 0%;
+}
+
+.content-1 h1 {
+    font-size: 70px;
+    /* line-height: 0.3; */
+}
+
+.content-padding {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.content-2 {
+    font-size: 20px;
+}
+
+.content-3 {
+    font-size: 20px;
+}
+
+.line {
+    line-height: 0.1;
+}
+
+.content-3 a {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+
+.bg-color-trans {
+    background-color: var(--main-color-trans);
+}
+
+.bg-color {
+    background-color: var(--main-color);
+}
+
+.bg-img {
+    background-image: url(../img/fondo-opt.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    /* padding: 10%; */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.full-page{
+    min-height: 100vh;
+}
+
+.align-center {
+    align-items: center;
+}
+
+#form-contact {
+    font-size: 23px;
+    /* padding: 2%; */
+    border-radius: 4%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form-contact h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#form-contact input, textarea{
+    border-radius: 5px;
+    padding: 1%; 
+    outline: none; 
+}
+
+#form-contact button{
+    margin-top: 5%;
+    padding: 1%;
+    border: transparent;
+    outline: none;
+    width: 20%;
+    background-color: white;
+    border: transparent;
+    border-radius: 2%;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.content-form{
+    padding: 2%;
+    border-radius: 2%;
+}
+.content-form * {
+    font-size: 16px;
+    margin: auto;
+    width: 100%;
+}
+
+.alert {
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.valid {
+    border-color: rgb(29, 223, 71);
+    border-style: solid;
+    border-width: 2px;
+}
+
+@media screen and (max-width: 2000px) {
+    body {
+        /* background-color: aqua; */
+    }
+
+    .content-1 h1 {
+        font-size: 84px;
+    }
+
+    .content-2 {
+        font-size: 24px;
+    }
+
+    .content-3 {
+        font-size: 24px;
+    }
+
+    .content-form {
+        font-size: 23px;
+        width: 40%;
+    }
+
+    .menu {}
+
+    .header {
+        font-size: 14px;
+    }
+
+    .header p {
+        font-size: 36px;
+    }
+
+    .menu {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        /* background-color: aqua; */
+    }
+
+    .content-1 h1 {
+        font-size: 44px;
+    }
+
+    .content-2 {
+        font-size: 14px;
+    }
+
+    .content-3 {
+        font-size: 14px;
+    }
+
+    .content-form {
+        font-size: 23px;
+        width: 80%;
+    }
+
+    .header {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .menu {
+        font-size: 14px;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .menu {
+        flex-direction: column;
+    }
+}
